@@ -1,0 +1,194 @@
+.card-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.in-card-wrapper{
+
+    width: 85%;
+
+
+}
+.in-card-wrapper .slick-slide{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+
+.slick-arrow.slick-prev ,
+.slick-arrow.slick-next {
+
+    width: 60px;
+    height: 60px;
+    background-color: #F5F5F5;
+   display: flex;
+   z-index: 1;
+   border-radius: 100px;
+
+}
+
+.slick-prev {
+left: -90px;
+
+}
+
+.slick-next{
+right: -90px;
+}
+.slick-prev::before,
+.slick-next::before{
+    left: 20px;
+    font-size: 30px;
+    color: #D1D5DC;
+
+    background-color:#F5F5F5;
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:1500px) {
+
+   
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .slick-prev {
+        left: -4%;
+        
+        }
+        
+        .slick-next{
+        right: -4%;
+        }
+    
+
+
+    .in-card-wrapper{
+        width: 90%;
+        max-height: 400px;
+
+    }
+    
+}
+
+@media only screen and (max-width:700px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .in-card-wrapper{
+        width: 70%;
+        max-height: 400px;
+    }
+    
+}
+
+
+@media only screen and (max-width:1000px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .in-card-wrapper{
+        width: 70%;
+    max-height: 400px !important;
+
+    }
+    .slick-prev {
+        left: -70px;
+        
+        }
+        
+        .slick-next{
+        right: -70px;
+        }
+  
+    .slider-card-container{
+        margin: 0;
+    }
+
+    .in-card-wrapper.slick-slide{
+        display: flex;
+        justify-content: center;
+        gap: 10px !important;
+        margin: 0;
+        
+      
+    }
+    
+}
+
+@media only screen and (max-width:600px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .in-card-wrapper{
+        width: 90%;
+    }
+
+    .slider-card-container{
+        margin: 0px 0px 20px 0px;
+        width: 200px !important;
+    
+    }
+
+  
+
+    .in-card-wrapper .slick-slide{
+        /* background: red; */
+        display: flex;
+
+        justify-content: center;
+        left: 40px;
+      
+    }
+
+    .slick-prev {
+        left: -40px;
+        
+        }
+        
+        .slick-next{
+        right: -40px;
+        }
+}
+
+
+@media screen and (max-width:500px) {
+
+    .card-wrapper{
+        width: 100%;
+        overflow: hidden;
+    
+    }
+    .in-card-wrapper{
+        display: block;
+        max-height: 400px;
+        width: 95%;
+    }
+
+    .in-card-wrapper .slick-slide{
+       min-height: 400px ;
+        width: 200px !important;
+        margin: 0px 20px;
+     
+      
+    }
+}
